@@ -1,0 +1,31 @@
+---
+import Calentador from "./electrodomesticos/Calentador.astro";
+import Estufa from "./electrodomesticos/Estufa.astro";
+import Lavadoras from "./electrodomesticos/Lavadoras.astro";
+import Nevecon from "./electrodomesticos/Neveras.astro";
+---
+
+<article class='flex flex-wrap justify-center bg-secondary'>
+  <header class="flex justify-center items-center">
+    <h2
+      class='mt-6 mb-6 max-sm:mb-2 max-sm:mt-4 text-center font-roboto text-2xl  text-slate-200 max-sm:text-xl dark:text-white'
+    >
+      Somos expertos en <strong>instalación</strong>,<strong>
+        mantenimiento</strong
+      > y <strong>reparación</strong> de:
+    </h2>
+  </header>
+  <section class='flex justify-between max-sm:flex-col max-sm:w-[100%]'>
+    <Nevecon />
+    <Estufa />
+    <Lavadoras />
+    <Calentador />
+  </section>
+  <footer class="flex justify-center items-center mb-4">
+    <h3
+      class='mt-6 mb-6 max-sm:mb-2 max-sm:ml-2 text-2xl font-roboto text-slate-200 max-sm:text-xl dark:text-white'
+    >
+      y mucho más, contáctenos para tener el gusto de atenderlo...
+    </h3>
+  </footer>
+</article>

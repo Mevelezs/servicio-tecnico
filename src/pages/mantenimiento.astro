@@ -1,0 +1,39 @@
+---
+import Calentador from "../components/electrodomesticos/Calentador.astro";
+import Estufa from "../components/electrodomesticos/Estufa.astro";
+import Lavadoras from "../components/electrodomesticos/Lavadoras.astro";
+import Nevecon from "../components/electrodomesticos/Neveras.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title='Reparacion y mantenimiento de nevera, estufas, lavadoras y calentadores haceb'
+>
+  <article class='mt-[155px] flex flex-col justify-center bg-slate-200'>
+    <header class='justify-center items-center m-10'>
+      <h1
+        class='mt-6 mb-6 max-sm:mb-2 max-sm:mt-4 max-sm:ml-4 text-2xl font-roboto text-primary uppercase dark:text-white self-center'
+      >
+        Somos expertos en <strong>instalacion</strong>,<strong>
+          mantenimiento</strong
+        > y <strong>reparación</strong> de:
+      </h1>
+      <p class='font-moserrat text-2xl text-secondary text-pretty'>
+        Somos una empresa especializada en brindar soluciones confiables y eficientes en la reparación y mantenimiento de una amplia gama de electrodomésticos. Con años de experiencia en el sector, nuestro equipo de técnicos altamente capacitados se enorgullece de ofrecer un servicio de primera calidad a nuestros clientes. Desde la reparación de lavadoras y neveras hasta calentadores y estufas, estamos comprometidos en devolver la funcionalidad a tus electrodomésticos de forma rápida y
+        precisa. Nuestra dedicación a la satisfacción del cliente, la atención meticulosa al detalle y el conocimiento profundo de las últimas tecnologías en electrodomésticos nos convierten en tu elección de confianza cuando necesitas asistencia experta. En cada servicio que brindamos, nuestra meta es que tu hogar funcione de manera óptima y sin complicaciones. ¡Confía en nosotros para mantener tus electrodomésticos en pleno funcionamiento!.
+      </p>
+    </header>
+    <section class='grid grid-cols-2 max-sm:grid-cols-1'>
+      <Nevecon />
+      <Estufa />
+      <Lavadoras />
+      <Calentador />
+    </section>
+    <footer class='flex justify-center items-center'>
+      <h3
+        class='mt-6 mb-6 max-sm:mb-2 max-sm:ml-2 max-sm:text-xs font-roboto text-2xl text-primary uppercase dark:text-white'
+      >
+        y mucho más, contáctenos para tener el gusto de atenderlo...
+      </h3>
+    </footer>
+  </article>
+</Layout>

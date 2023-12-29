@@ -1,0 +1,19 @@
+---
+import Electrodomesticos from "../components/Electrodomesticos.astro";
+import Marcas from "../components/Marcas.astro";
+import MarcasSlice from "../components/MarcasSlice.astro";
+import Slice from "../components/Slice.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title='Reparacion y mantenimiento de nevera, estufas, lavadoras y calentadores haceb'
+>
+  <section
+    class='flex flex-wrap justify-center items-center w-screen-lg bg-pattern bg-center bg-no-repeat bg-contain'
+  >
+    <Slice />
+    <Marcas />
+    <Electrodomesticos />
+  </section>
+  <MarcasSlice />
+</Layout>
